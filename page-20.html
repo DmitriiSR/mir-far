@@ -1,0 +1,639 @@
+<!-- Заказ-наряды -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Реализация</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		<aside class="sidebar">
+			<a href="" class="logo">
+				<img src="image/logo.png" alt="" class="logo__img">
+			</a>
+			<div class="sidebar__list">
+				<ul class="first-list">
+					<a href="" class="">
+						<h2 class="first-list__title">Каталог товаров</h2>
+					</a>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item list-item-active">
+						<a href="" class="">Audi</a>
+					</li>
+					<li>
+						<ul class="second-list-block">
+							<li class="first-list__item second-list">
+								<a href="" class="">Q3</a>
+							</li>
+							<li>
+								<ul>
+									<li class="last-list-item last-list-active">
+										<a href="">Q3 2011-2014 Дорестайлинг</a>
+									</li>
+									<li class="last-list-item">
+										<a href="">Q3 2011-2014 Дорестайлинг</a>
+									</li>
+								</ul>
+							</li>
+							<li class="first-list__item second-list">
+								<a href="" class="">A4</a>
+							</li>
+							<li class="first-list__item second-list">
+								<a href="" class="">A3</a>
+							</li>
+							<li class="first-list__item second-list">
+								<a href="" class="">A5</a>
+							</li>
+							<li class="first-list__item second-list">
+								<a href="" class="">A8</a>
+							</li>
+						</ul>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+					<li class="first-list__item">
+						<a href="" class="">Audi</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<div class="main-wrapper">
+			<header class="header">
+				<label for="" class="search">
+					<input type="search" class="search__input" placeholder="Поиск по сайту">
+					<a href="" class="search__button">
+						<img src="image/search.png" alt="" class="search__icon">
+					</a>
+				</label>
+				<a href="" class="scan">
+					<span class="scan__span">Сканировать штрих-код</span>
+				</a>
+				<label for="" class="city">
+					<input type="text" class="city__input" placeholder="Выберите город">
+					<a href="" class="city__button">
+						<img src="image/down-black.png" alt="" class="city__icon">
+					</a>
+				</label>
+				<div class="profile">
+					<div class="">
+						<input type="checkbox" class="profile__avatar__input" id="profile-menu">
+						<label class="profile__avatar" for="profile-menu"></label>
+						<ul class="profile-menu">
+							<li>
+								<a href="" class="profile-menu-item">Управление</a>
+							</li>
+							<li>
+								<a href="" class="profile-menu-item index">Каталог товаров франчайзи</a>
+							</li>
+							<li>
+								<input type="checkbox" class="profile-menu-item__input" id="profile-menu-item-1">
+								<label class="profile-menu-item profile-menu-item__list" for="profile-menu-item-1">Настройки</label>
+								<div class="profile-sub-menu">
+									<a class="profile-sub-menu__item">- Настройки для документов</a>
+									<a class="profile-sub-menu__item">- Настройки интеграции с авито и дромом</a>
+								</div>
+							</li>
+							<li>
+								<input type="checkbox" class="profile-menu-item__input" id="profile-menu-item-2">
+								<label class="profile-menu-item profile-menu-item__list" for="profile-menu-item-2">Статистика</label>
+								<div class="profile-sub-menu">
+									<a class="profile-sub-menu__item">- Хит парад</a>
+									<a class="profile-sub-menu__item">- Количества товара</a>
+									<a class="profile-sub-menu__item">- Контроль наличия</a>
+								</div>
+							</li>
+							<li><a href="" class="profile-menu-item">Сменить пользователя</a></li>
+							<li><a href="" class="profile-menu-item">Выйти</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<div class="top-wrapper">
+					<div class="top-sub-container">
+						<div class="top-bar">
+						<div class="top-bar__left">
+							<ul class="nav-bar">
+								<li class="nav-bar__item">
+									<a href="" class="nav-bar__link">Заказы с сайта</a>
+									<span class="index"></span>
+								</li>
+								<li class="nav-bar__item">
+									<a href="" class="nav-bar__link">Заказ-наряды</a>
+									<span class="index"></span>
+								</li>
+								<li class="nav-bar__item">
+									<a href="" class="nav-bar__link">Реализация</a>				
+								</li>
+								<li class="nav-bar__item">
+									<a href="" class="nav-bar__link">Расходы</a>
+								</li>
+								<li class="nav-bar__item">
+									<a href="" class="nav-bar__link">Передать товар</a>
+								</li>
+								<li class="nav-bar__item">
+									<a href="" class="nav-bar__link">Инкассация</a>
+								</li>
+								<li class="nav-bar__item">
+									<a href="" class="nav-bar__link">Списать брак</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="" class="page-search date-search">
+							<span class="date-icon"></span>
+							<input type="search" class="page-search__input date-input" placeholder="Укажите период">
+							<a href="" class="page-search__button">
+								<img src="image/search.png" alt="" class="page-search__icon">
+							</a>
+						</label>
+						<button class="add-settings__close search-top-btn">
+							<img src="image/x.png" alt="">
+						</button>
+						<button class="add-settings__show mg-left-0 search-top-btn">Добавить в брак</button>
+					</div>
+					
+					</div>
+					<div class="stat__block top-stat-block">
+						<div class="stat__string">
+							<span>Оборот</span>
+							<span>18 000 руб.</span>
+						</div>
+						<div class="stat__string">
+							<span>Расходы</span>
+							<span>5 000 руб.</span>
+						</div>
+						<div class="stat__string">
+							<span>Деньги в кассе</span>
+							<span>7 000 руб.</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="main__container">
+						<h1 class="page-title">Реализация</h1>
+						<div class="page-title-block">
+							<label for="" class="page-search">
+								<input type="search" class="page-search__input" placeholder="Поиск по сайту">
+								<a href="" class="page-search__button">
+									<img src="image/search.png" alt="" class="page-search__icon">
+								</a>
+							</label>
+							<button class="add-settings__close">
+								<img src="image/x.png" alt="">
+							</button>
+							<button class="add-settings__show mg-left-0 search-top-btn margin-bottom-none">Добавить Заказ-наряд</button>
+						</div>
+					<div class="order-table">
+						<div class="order-title-string status-gray">
+							<div class="order-title-string__item string-item-bold">
+								<input type="checkbox" class="order-input" id="order-checkbox-1">
+								<label for="order-checkbox-1" class="order-label">
+									<div class="order-title-string__item string-item-bold">
+										<img src="image/defect-pre-image.png" alt="" class="">
+									</div>
+								</label>
+								<div class="order-sub-menu">
+									<a href="" class="add-menu__item">Возврат</a>
+									<a href="" class="add-menu__item">Редактировать</a>
+									<a href="" class="add-menu__item">Накладная</a>
+									<a href="" class="add-menu__item">Счет-фактура</a>
+									<a href="" class="add-menu__item">Счет</a>
+									<a href="" class="add-menu__item">Бланк заказа</a>
+									<a href="" class="add-menu__item">Универсальный передаточный документ</a>
+									<a href="" class="add-menu__item">Акт выполненных работ</a>
+								</div>
+							</div>
+							<div class="order-title-string__item">
+								<span class="string-item-bold">Заказ № 1412</span>
+								<span>04.08.2021</span>
+								<span>14:25:20</span>
+							</div>
+							<div class="order-title-string__item string-item-bold">Заказ оплачен</div>
+							<div class="order-title-string__item string-item-bold">Иванов Иван Иванович</div>
+							<div class="order-title-string__item string-item-bold">+7 (999) 111-11-11</div>
+							<div class="order-title-string__item string-item-bold">Архангельск</div>
+						</div>
+						<div class="catalog-table__string">
+							<span class="title-string__item un-string-item order-title-string__sub-item">Наименование</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">шт</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">Возврат</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">Цена</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">Скидка (%)</span>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item">
+								Левое стекло фары Land Rover Range Rover Sport I 2009-2013 Рестайлинг
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								13 
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								ИТОГО:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Товаров:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Услуг:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								0
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								0 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Заказов:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="order-title-string status-blue">
+							<div class="order-title-string__item string-item-bold">
+								<input type="checkbox" class="order-input" id="order-checkbox-1">
+								<label for="order-checkbox-1" class="order-label">
+									<div class="order-title-string__item string-item-bold">
+										<img src="image/defect-pre-image.png" alt="" class="">
+									</div>
+								</label>
+								<div class="order-sub-menu">
+									<a href="" class="add-menu__item">Возврат</a>
+									<a href="" class="add-menu__item">Редактировать</a>
+									<a href="" class="add-menu__item">Накладная</a>
+									<a href="" class="add-menu__item">Счет-фактура</a>
+									<a href="" class="add-menu__item">Счет</a>
+									<a href="" class="add-menu__item">Бланк заказа</a>
+									<a href="" class="add-menu__item">Универсальный передаточный документ</a>
+									<a href="" class="add-menu__item">Акт выполненных работ</a>
+								</div>
+							</div>
+							<div class="order-title-string__item">
+								<span class="string-item-bold">Заказ № 1412</span>
+								<span>04.08.2021</span>
+								<span>14:25:20</span>
+							</div>
+							<div class="order-title-string__item string-item-bold">Заказ оплачен</div>
+							<div class="order-title-string__item string-item-bold">Иванов Иван Иванович</div>
+							<div class="order-title-string__item string-item-bold">+7 (999) 111-11-11</div>
+							<div class="order-title-string__item string-item-bold">Архангельск</div>
+						</div>
+						<div class="catalog-table__string">
+							<span class="title-string__item un-string-item order-title-string__sub-item">Наименование</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">шт</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">Возврат</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">Цена</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">Скидка (%)</span>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item">
+								Левое стекло фары Land Rover Range Rover Sport I 2009-2013 Рестайлинг
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								13 
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								ИТОГО:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Товаров:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Услуг:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								0
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								0 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Заказов:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						</div>
+						<div class="order-title-string status-green">
+							<div class="order-title-string__item string-item-bold">
+								<input type="checkbox" class="order-input" id="order-checkbox-1">
+								<label for="order-checkbox-1" class="order-label">
+									<div class="order-title-string__item string-item-bold">
+										<img src="image/defect-pre-image.png" alt="" class="">
+									</div>
+								</label>
+								<div class="order-sub-menu">
+									<a href="" class="add-menu__item">Возврат</a>
+									<a href="" class="add-menu__item">Редактировать</a>
+									<a href="" class="add-menu__item">Накладная</a>
+									<a href="" class="add-menu__item">Счет-фактура</a>
+									<a href="" class="add-menu__item">Счет</a>
+									<a href="" class="add-menu__item">Бланк заказа</a>
+									<a href="" class="add-menu__item">Универсальный передаточный документ</a>
+									<a href="" class="add-menu__item">Акт выполненных работ</a>
+								</div>
+							</div>
+							<div class="order-title-string__item">
+								<span class="string-item-bold">Заказ № 1412</span>
+								<span>04.08.2021</span>
+								<span>14:25:20</span>
+							</div>
+							<div class="order-title-string__item string-item-bold">Заказ оплачен</div>
+							<div class="order-title-string__item string-item-bold">Иванов Иван Иванович</div>
+							<div class="order-title-string__item string-item-bold">+7 (999) 111-11-11</div>
+							<div class="order-title-string__item string-item-bold">Архангельск</div>
+						</div>
+						<div class="catalog-table__string">
+							<span class="title-string__item un-string-item order-title-string__sub-item">Наименование</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">шт</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">Возврат</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">Цена</span>
+							<span class="title-string__item un-string-item order-title-string__sub-item">Скидка (%)</span>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item">
+								Левое стекло фары Land Rover Range Rover Sport I 2009-2013 Рестайлинг
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								13 
+							</div>
+						</div>
+						<div class="catalog-table__string slim-string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Услуги
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								<span class="font-n">Установка</span>
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								13
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								ИТОГО:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Товаров:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Услуг:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								0
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								0 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						<div class="catalog-table__string">
+							<div class="string__item un-string-item order-title-string__sub-item string-item-bold">
+								Заказов:
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								1
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								7 000 руб. 
+							</div>
+							<div class="string__item un-string-item order-title-string__sub-item">
+								
+							</div>
+						</div>
+						</div>
+					</div>				
+				</div>
+			</main>
+		</div>
+	</div>
+</body>
+</html>
