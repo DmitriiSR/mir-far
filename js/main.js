@@ -170,7 +170,7 @@ $('.inkass-btn-close').on('click', function() {
 
 
 $('#order-label-1').on('click', function() {
-	$(this).addClass('order-menu-active');
+	$(this).toggleClass('order-menu-active');
 });
 $(document).click(function (e) {
 	let btn = $('#order-label-1');
@@ -186,7 +186,7 @@ $(document).click(function (e) {
 
 
 $('#order-label-2').on('click', function() {
-	$(this).addClass('order-menu-active');
+	$(this).toggleClass('order-menu-active');
 });
 
 $(document).click(function (e) {
@@ -204,7 +204,7 @@ $(document).click(function (e) {
 
 
 $('#order-label-3').on('click', function() {
-	$(this).addClass('order-menu-active');
+	$(this).toggleClass('order-menu-active');
 });
 $(document).click(function (e) {
 	let btn = $('#order-label-3');
@@ -219,10 +219,73 @@ $(document).click(function (e) {
 
 
 $('#order-label-4').on('click', function() {
-	$(this).addClass('order-menu-active');
+	$(this).toggleClass('order-menu-active');
 });
 $(document).click(function (e) {
 	let btn = $('#order-label-4');
+	let popupMenu = $('.order-sub-menu');
+	if ( ! btn.is(e.target) && btn.has(e.target).length === 0 &&
+		  ! popupMenu.is(e.target) && popupMenu.has(e.target).length === 0 
+		) {
+		btn.removeClass('order-menu-active');
+	}
+});
+
+
+$('#m-order-label-1').on('click', function() {
+	$(this).toggleClass('order-menu-active');
+});
+$(document).click(function (e) {
+	let btn = $('#m-order-label-1');
+	let popupMenu = $('.order-sub-menu');
+
+	if ( ! btn.is(e.target) && btn.has(e.target).length === 0 &&
+		  ! popupMenu.is(e.target) && popupMenu.has(e.target).length === 0 
+		) {
+		btn.removeClass('order-menu-active');
+	}
+});
+
+
+
+$('#m-order-label-2').on('click', function() {
+	$(this).toggleClass('order-menu-active');
+});
+
+$(document).click(function (e) {
+
+	let btn = $('#m-order-label-2');
+	let popupMenu = $('.order-sub-menu');
+
+	if ( ! btn.is(e.target) && btn.has(e.target).length === 0 &&
+		  ! popupMenu.is(e.target) && popupMenu.has(e.target).length === 0 
+		) {
+		btn.removeClass('order-menu-active');
+	}
+});
+
+
+
+$('#m-order-label-3').on('click', function() {
+	$(this).toggleClass('order-menu-active');
+});
+$(document).click(function (e) {
+	let btn = $('#m-order-label-3');
+	let popupMenu = $('.order-sub-menu');
+	if ( ! btn.is(e.target) && btn.has(e.target).length === 0 &&
+		  ! popupMenu.is(e.target) && popupMenu.has(e.target).length === 0 
+		) {
+		btn.removeClass('order-menu-active');
+	}
+});
+
+
+
+$('#m-order-label-4').on('click', function() {
+	$(this).toggleClass('order-menu-active');
+});
+$(document).click(function (e) {
+	let btn = $('#m-order-label-4');
 	let popupMenu = $('.order-sub-menu');
 	if ( ! btn.is(e.target) && btn.has(e.target).length === 0 &&
 		  ! popupMenu.is(e.target) && popupMenu.has(e.target).length === 0 
@@ -237,10 +300,35 @@ $(document).click(function (e) {
 
 $('.delete-franchisee').on('click', function() {
 	$('.popup-delete-franch').addClass('active-popup');
+	$('.mask-popup').addClass('active-popup');
 });
 
 
 $('.btn-delete-cancel').on('click', function() {
 	$('.popup-delete-franch').removeClass('active-popup');
+	$('.mask-popup').removeClass('active-popup');
 });
 
+
+
+// Burger
+
+$('.burger__icon').on('click', function() {
+	$('.burger__menu').toggleClass('burger-active');
+});
+
+$('.menu-x').on('click', function() {
+	$('.burger__menu').removeClass('burger-active');
+});
+
+// Add setings
+
+$('.add-setings__label').on('click', function() {
+	$('.add-settings').toggleClass('active');
+});
+
+// Edit franchisee M
+
+$('.p4-title').on('click', function() {
+	$(this).toggleClass('active');
+});
